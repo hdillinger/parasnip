@@ -11,7 +11,7 @@ procs = 20
 # get active view
 renderView1 = GetActiveViewOrCreate('RenderView')
 
-path = 'C:\salome\processor'
+path = 'C:\meshCheckDecompose\processor'
 
 for proc in range(procs):
     foamfile = path + str(proc) + '\processor' + str(proc) + '.foam'

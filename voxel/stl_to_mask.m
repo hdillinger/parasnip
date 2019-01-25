@@ -1,11 +1,11 @@
 %% Voxelization
 nx = 96;
-ny = 100;
+ny = 88;
 nz = 19;
 
-addpath('voxelization\');
+addpath('C:\git\parasnip\voxel\voxelization\');
 % [OUTPUTgrid] = VOXELISE(nx, ny, nz, 'myRegionBin.stl', 'xyz');
-[OUTPUTgrid] = VOXELISE(nx, ny, nz, 'geometry_not_smoothed.stl', 'xyz');
+[OUTPUTgrid] = VOXELISE(nx, ny, nz, 'teapotOut.stl', 'xyz');
 
 mask = repmat(OUTPUTgrid,[1,1,1,size(I,4),size(I,5)]);
 % mask = permute(mask, [2,1,3,4,5]);
