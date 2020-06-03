@@ -163,6 +163,7 @@ cbar_ax = fig.add_axes([0, 0, 1, 0.05])
 # clb = fig.colorbar(mapper, shrink=1.0, orientation='horizontal', ticks=levels, format='%.0f', cax=cbar_ax)
 clb = fig.colorbar(mapper, orientation='horizontal', ticks=levels, format='%.0f', cax=cbar_ax)
 clb.ax.tick_params(size=0)
+
 if factor == 1000:
     prefix = 'm'
 elif factor == 1000000:

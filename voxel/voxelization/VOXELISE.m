@@ -191,11 +191,11 @@ end
 % meshZmin = min(min(meshXYZ(:,3,:)));
 % meshZmax = max(max(meshXYZ(:,3,:)));
 meshXmin = 0;
-meshXmax = gridX;
+meshXmax = max(gridX);
 meshYmin = 0;
-meshYmax = gridY;
+meshYmax = max(gridY);
 meshZmin = 0;
-meshZmax = gridZ;
+meshZmax = max(gridZ);
 
 %======================================================
 % CHECK THE DIMENSIONS OF THE 3D OUTPUT GRID
